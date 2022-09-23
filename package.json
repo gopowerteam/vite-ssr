@@ -1,6 +1,6 @@
 {
   "name": "@gopowerteam/vite-ssr",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "private": true,
   "description": "Vite utility for server side rendering",
   "main": "./index.js",
@@ -118,8 +118,5 @@
     "uvu": "^0.5.1",
     "watchlist": "^0.2.3",
     "yorkie": "^2.0.0"
-  },
-  "gitHooks": {
-    "commit-msg": "node scripts/verifyCommit.js"
   }
 }
