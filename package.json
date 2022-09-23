@@ -1,9 +1,14 @@
 {
-  "name": "vite-ssr",
-  "version": "0.16.0",
+  "name": "@gopowerteam/vite-ssr",
+  "version": "0.16.1",
   "private": true,
   "description": "Vite utility for server side rendering",
   "main": "./index.js",
+  "exports":{
+    "./plugin": "./plugin.js",
+    "./dev": "./dev/index.js",
+    "./*": "./*"
+  },
   "scripts": {
     "dev": "npm-run-all dev:* --parallel dev:watch:* ",
     "dev:clean": "rm -rf node_modules/vite-ssr && mkdir node_modules/vite-ssr",
@@ -22,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frandiox/vite-ssr.git"
+    "url": "git+https://github.com/gopowerteam/vite-ssr.git"
   },
   "keywords": [
     "vite",
@@ -30,12 +35,12 @@
     "vue",
     "react"
   ],
-  "author": "Fran Dios",
+  "author": "zhuchentong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frandiox/vite-ssr/issues"
+    "url": "https://github.com/gopowerteam/vite-ssr/issues"
   },
-  "homepage": "https://github.com/frandiox/vite-ssr#readme",
+  "homepage": "https://github.com/gopowerteam/vite-ssr#readme",
   "bin": "./cli.js",
   "types": "./index.d.ts",
   "workspaces": [
@@ -52,7 +57,7 @@
     "react-dom": "^17",
     "react-helmet-async": "^1.0.0",
     "react-router-dom": "^6",
-    "vite": "^2.7.7",
+    "vite": "^3.0.0",
     "vue": "^3.2.26",
     "vue-router": "^4.0.0"
   },
